@@ -43,5 +43,42 @@ header {
   background-color: green;
   color: white;
 }
+header div {
+  padding: 5px;
+}
+header div img {
+  border-radius: 50%;
+}
+header div h1 {
+  display: inline-block;
+}
+header nav {
+  display: inline-block;
+  padding: 5px;
+}
+section {
+  padding: 5px;
+}
+
+footer {
+  background-color: green;
+  color: white;
+}
+
+.textoBlanco {
+  color: white;
+}
+
+.cartaIzquierda {
+  position: relative;
+  top: -300px;
+  left: 10px;
+}
+
+.cartaDerecha {
+  position: relative;
+  top: -300px;
+  right: -10px;
+}
 
 /*# sourceMappingURL=styles.css.map */

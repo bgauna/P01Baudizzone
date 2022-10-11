@@ -1,0 +1,28 @@
+//tamaños de textos
+h1{
+    font-size: map-get($textos, th1);
+}
+
+h2{
+    font-size: map-get($textos, th2);
+}
+
+h3{
+    font-size: map-get($textos, th3);
+}
+
+h4{
+    font-size: map-get($textos, th4);
+}
+
+h5{
+    font-size: map-get($textos, th5);
+}
+
+h6{
+    font-size: map-get($textos, th6);
+}
+
+p{
+    font-size: map-get($textos, tp);
+}

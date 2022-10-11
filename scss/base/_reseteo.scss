@@ -10,3 +10,8 @@ html{
 body{
     font-family: map-get($fuentes,f1),map-get($fuentes,f2),map-get($fuentes,f3);
 }
+
+.reseteoBS{
+    margin:0;
+    padding:0;
+}

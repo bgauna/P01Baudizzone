@@ -11,6 +11,11 @@ body {
   font-family: arial, helvetica, sans-serif;
 }
 
+.reseteoBS {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -28,15 +33,27 @@ h4 {
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 1.8rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.7rem;
+}
+
+.textoBlanco {
+  color: white;
+}
+
+.centrarTexto {
+  text-align: center;
+}
+
+.textoInline {
+  display: inline-block;
 }
 
 header {
@@ -56,16 +73,20 @@ header nav {
   display: inline-block;
   padding: 5px;
 }
+main {
+  padding: 0;
+}
+
+main div div div img {
+  width: 50vw;
+}
+
 section {
-  padding: 5px;
+  padding: 5px 0;
 }
 
 footer {
   background-color: green;
-  color: white;
-}
-
-.textoBlanco {
   color: white;
 }
 
@@ -79,6 +100,19 @@ footer {
   position: relative;
   top: -300px;
   right: -10px;
+}
+
+.tarjeta {
+  border: 5px solid green;
+  border-radius: 8px;
+  padding: 5px;
+  width: 20vw;
+  transition: 500ms;
+}
+
+.tarjeta:hover {
+  background-color: #ffffcc;
+  transform: scale(1.03);
 }
 
 /*# sourceMappingURL=styles.css.map */

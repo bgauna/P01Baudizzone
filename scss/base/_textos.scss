@@ -26,3 +26,14 @@ h6{
 p{
     font-size: map-get($textos, tp);
 }
+
+.textoBlanco{
+    color: white;
+}
+
+.centrarTexto{
+    text-align:center;
+}
+.textoInline{
+    display:inline-block;
+}

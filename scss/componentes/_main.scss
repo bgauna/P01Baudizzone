@@ -1,7 +1,15 @@
 main{
     padding: 0;
-}
-
-main div div div img{
-    width: 50vw;
+    @media screen and (min-width:768px) {
+        height: 49vw;
+    }
+    div{
+        div{
+            div{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

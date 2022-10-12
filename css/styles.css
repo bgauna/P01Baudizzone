@@ -17,23 +17,23 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
   font-size: 2.25rem;
 }
 
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
 h4 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 h5 {
-  font-size: 1.9rem;
+  font-size: 1.85rem;
 }
 
 h6 {
@@ -68,21 +68,41 @@ header div img {
 }
 header div h1 {
   display: inline-block;
+  padding: 0 15px;
 }
 header nav {
   display: inline-block;
   padding: 5px;
 }
+header nav div a {
+  color: white;
+}
 main {
   padding: 0;
 }
-
+@media screen and (min-width: 768px) {
+  main {
+    height: 49vw;
+  }
+}
 main div div div img {
-  width: 50vw;
+  width: 100%;
 }
 
 section {
-  padding: 5px 0;
+  padding: 15px 0;
+}
+section h2 {
+  font-weight: bold;
+  padding: 10px 0;
+}
+section div div div img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  section div div div img {
+    width: 100%;
+  }
 }
 
 footer {
@@ -92,17 +112,25 @@ footer {
 
 .cartaIzquierda {
   position: relative;
-  top: -300px;
+  top: -20vw;
   left: 10px;
+  width: 30rem;
+}
+@media screen and (max-width: 768px) {
+  .cartaIzquierda {
+    top: 10px;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .cartaDerecha {
   position: relative;
-  top: -300px;
+  top: -20vw;
   right: -10px;
 }
 
-.tarjeta {
+.tarjeta, .tarjetaManada, .tarjetaScout, .tarjetaCaminante, .tarjetaRover {
   border: 5px solid green;
   border-radius: 8px;
   padding: 5px;
@@ -111,8 +139,85 @@ footer {
 }
 
 .tarjeta:hover {
-  background-color: #ffffcc;
+  background-color: #ffff99;
   transform: scale(1.03);
+}
+
+.tarjetaManada {
+  background-color: #ffff66;
+}
+
+.tarjetaManada:hover {
+  background-color: #999900;
+  transform: scale(1.03);
+  color: white;
+}
+
+.tarjetaScout {
+  background-color: lightgreen;
+}
+
+.tarjetaScout:hover {
+  background-color: green;
+  transform: scale(1.03);
+  color: white;
+}
+
+.tarjetaCaminante {
+  background-color: skyblue;
+}
+
+.tarjetaCaminante:hover {
+  background-color: blue;
+  transform: scale(1.03);
+  color: white;
+}
+
+.tarjetaRover {
+  background-color: pink;
+}
+
+.tarjetaRover:hover {
+  background-color: red;
+  transform: scale(1.03);
+  color: white;
+}
+
+.bgSecundario {
+  background-color: #ffffe6;
+}
+
+.parallax {
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+.parallax1 {
+  background-image: url(../../img/parallax1.svg);
+  background-size: fill;
+}
+
+.parallax2 {
+  background-image: url(../../img/parallax2.svg);
+  background-size: fill;
+}
+
+.parallax3 {
+  background-image: url(../../img/parallax3.svg);
+  background-size: fill;
+}
+
+.ocultar768 {
+  visibility: visible;
+}
+@media screen and (max-width: 768px) {
+  .ocultar768 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

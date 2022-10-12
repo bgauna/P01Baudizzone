@@ -1,4 +1,27 @@
 footer{
     background-color: $color-principal;
     color: white;
+    padding:20px;
+    div{
+        div{
+            div{
+                p{
+                    font-size: 1.5rem;
+                    a{
+                        color:white;
+                        text-decoration-line: none;
+                        font-weight: bold;
+                        padding:10px 5px;
+                        font-size: large;
+                        i{
+                            font-size: xx-large;
+                        }
+                        &:hover{
+                            color:$color-secundario;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

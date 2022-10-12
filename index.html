@@ -10,14 +10,14 @@
     <title>Grupo Scout 363 - Laureano A Baudizzone</title>
 </head>
 <body>
-    <header class="d-flex justify-content-between align-items-center">
+    <header id="inicio" class="d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
             <img src="./img/logoheader.jpg" alt="Logo Scout Grupo 363">
             <h1>
                 Grupo Scout 363 <br> Laureano Baudizzone
             </h1>
         </div>
-        <nav class="navbar navbar-expand-lg">
+        <!-- <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Menú</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,23 @@
                 </div>
               </div>
             </div>
-          </nav>
+          </nav> -->
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active textoBlanco" aria-current="page" href="#inicio"><strong>Home</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link textoBlanco" href="#quienesSomos">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled textoBlanco" href="#">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link textoBlanco" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -60,7 +76,7 @@
         </div>
     </main>
 
-    <section class="parallax parallax1">
+    <section id="quienesSomos" class="parallax parallax1">
         <h2 class="centrarTexto">
             ¿Quienes somos?
         </h2>
@@ -79,11 +95,9 @@
         </div>
     </section>
     <section class="bgSecundario">
-        <div class="d-flex justify-content-around flex-wrap">
+        <div class="d-flex flex-row justify-content-around flex-wrap">
                 <div class="tarjetaManada d-flex flex-column align-items-center">
-
-                        <i class="fa-brands fa-wolf-pack-battalion fa-5x"></i>
-
+                    <i class="fa-brands fa-wolf-pack-battalion fa-5x"></i>
                     <h3 class="centrarTexto">
                         Manada
                     </h3>
@@ -136,30 +150,30 @@
 
     </section>
     <section class="bgSecundario">
-        <div class="d-flex justify-content-around">
+        <div class="d-flex justify-content-around flex-wrap">
                 <div class="tarjeta textoInline d-flex flex-column align-items-center">
                     <i class="fa-solid fa-child-reaching fa-5x"></i>
-                    <h3 class="centrarTexto">
+                    <h4 class="centrarTexto">
                         Sábados Scout
-                    </h3>
+                    </h4>
                 </div>
                 <div class="tarjeta textoInline d-flex flex-column align-items-center">
                     <i class="fa-solid fa-campground fa-5x"></i>
-                    <h3 class="centrarTexto">
+                    <h4 class="centrarTexto">
                         Campamentos
-                    </h3>
+                    </h4>
                 </div>
                 <div class="tarjeta textoInline d-flex flex-column align-items-center">
                     <i class="fa-solid fa-comments fa-5x"></i>
-                    <h3 class="centrarTexto">
+                    <h4 class="centrarTexto">
                         Foros Juveniles
-                    </h3>
+                    </h4>
                 </div>
         </div>
 
 
     </section>
-    <section class="parallax parallax3">
+    <section id="contacto" class="parallax parallax3">
         <h2 class="centrarTexto">
             ¿Dónde Estamos?
         </h2>
@@ -167,19 +181,19 @@
             <div class="row">
                 <div class="col-12 col-md-6 d-flex flex-column align-self-center">
                     <p>
-                        Dirección: Lavalle 1845
+                        Dirección: Lavalle 1845 <br> Posadas, Misiones, Argentina
                     </p>
                     <p>
                         Sábado de 14.30h a 18h
                     </p>
                     <p>
-                        Jefe de Grupo: Elena da Silva                        
+                        Jefe de Grupo: <a href="https://www.facebook.com/elena.dasilva.90" target="_blank"> Elena da Silva</a>                        
                     </p>
                     <p>
-                        <i class="fa-brands fa-whatsapp"></i> <a href="#" target="_blank">+54 376 4123456</a>
+                        <i class="fa-brands fa-whatsapp"></i> <a href="http://wa.me/5493764218207" target="_blank">+54 3764 218207</a>
                     </p>
                     <p>
-                        Email: <a href="#" target="_blank">grupo363@scouts.org.ar</a>
+                        Email: <a href="mailto:grupo363@scouts.org.ar" target="_blank">grupo363@scouts.org.ar</a>
                     </p>
                     <p>
                         ¡Acercate y conocenos!
@@ -192,20 +206,23 @@
         </div>
 
     </section>
+    <section id="volver" class="section__article--margin textoInline btnVolver">
+        <a href="#inicio"><h3><i class="fa-solid fa-up-long"></i></h3></a>
+    </section>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4 d-flex align-self-end">
                     <p>
                         Hecho con <i class="fa-solid fa-heart"></i> por <a href="http://hande.ar" target="_blank">hande.ar</a>
-                    </p>
+                        </p>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-8 d-flex justify-content-end align-self-end">
                     <p>
                         Seguinos en nuestras RRSS:
-                        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
-                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
-                        <a href="scouts.org.ar" target="_blank">Scouts de Argentina</a>
+                        <a href="https://www.facebook.com/Baudi.Posadas/" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+                        <a href="https://www.instagram.com/baudi.posadas/" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+                        <a href="http://www.scouts.org.ar/" target="_blank">Scouts de Argentina</a>
                     </p>
                 </div>
             </div>

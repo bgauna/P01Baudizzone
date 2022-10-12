@@ -43,9 +43,19 @@ h6 {
 p {
   font-size: 1.7rem;
 }
+p a {
+  color: green;
+}
+p a:hover {
+  color: #999900;
+  text-decoration: underline;
+}
 
 .textoBlanco {
   color: white;
+}
+.textoBlanco:hover {
+  color: yellow;
 }
 
 .centrarTexto {
@@ -70,13 +80,23 @@ header div h1 {
   display: inline-block;
   padding: 0 15px;
 }
+@media screen and (max-width: 400px) {
+  header div h1 {
+    font-size: 1.7rem;
+  }
+}
 header nav {
   display: inline-block;
   padding: 5px;
 }
-header nav div a {
+header nav ul li {
+  font-size: 1.5rem;
+  text-align: end;
+}
+header nav ul li a {
   color: white;
 }
+
 main {
   padding: 0;
 }
@@ -108,6 +128,23 @@ section div div div img {
 footer {
   background-color: green;
   color: white;
+  padding: 20px;
+}
+footer div div div p {
+  font-size: 1.5rem;
+}
+footer div div div p a {
+  color: white;
+  text-decoration-line: none;
+  font-weight: bold;
+  padding: 10px 5px;
+  font-size: large;
+}
+footer div div div p a i {
+  font-size: xx-large;
+}
+footer div div div p a:hover {
+  color: yellow;
 }
 
 .cartaIzquierda {
@@ -134,8 +171,14 @@ footer {
   border: 5px solid green;
   border-radius: 8px;
   padding: 5px;
-  width: 20vw;
+  margin: 5px;
+  width: 20%;
   transition: 500ms;
+}
+@media screen and (max-width: 768px) {
+  .tarjeta, .tarjetaManada, .tarjetaScout, .tarjetaCaminante, .tarjetaRover {
+    width: 43%;
+  }
 }
 
 .tarjeta:hover {
@@ -218,6 +261,25 @@ footer {
   .ocultar768 {
     display: none;
   }
+}
+
+.btnVolver {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: green;
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+  --bs-link-color: white;
+  border-radius: 10px;
+}
+.btnVolver:hover {
+  color: yellow;
+  --bs-link-hover-color:$color-secundario;
+  border: 2px solid yellow;
 }
 
 /*# sourceMappingURL=styles.css.map */

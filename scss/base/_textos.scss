@@ -25,10 +25,20 @@ h6{
 
 p{
     font-size: map-get($textos, tp);
+    a{
+        color: $color-principal;
+        &:hover{
+            color:darken($color-secundario,20%);
+            text-decoration: underline;
+        }
+    }
 }
 
 .textoBlanco{
     color: white;
+    &:hover{
+        color:$color-secundario;
+    }
 }
 
 .centrarTexto{

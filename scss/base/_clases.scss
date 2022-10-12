@@ -20,7 +20,11 @@
     border: 5px solid $color-principal;
     border-radius: 8px;
     padding:5px;
-    width: 20vw;
+    margin:5px;
+    width: 20%;
+    @media screen and (max-width:768px) {
+        width: 43%;        
+    }
     transition: 500ms;
 }
 .tarjeta:hover{
@@ -92,3 +96,23 @@
     }
 }
 
+
+//botones
+.btnVolver {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: $color-principal;
+    text-align: center;
+    transition: 0.5s;
+    color: white;    
+    --bs-link-color: white;
+    border-radius: 10px;
+    &:hover{
+        color: $color-secundario;
+        --bs-link-hover-color:$color-secundario;
+        border: 2px solid $color-secundario;
+    }
+}

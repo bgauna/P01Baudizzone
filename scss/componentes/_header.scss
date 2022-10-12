@@ -9,26 +9,21 @@ header{
         h1{
             display: inline-block;
             padding:0 15px;
+            @media screen and (max-width:400px) {
+                font-size: 1.7rem;
+            }
         }
     }
 
     nav{
         display: inline-block;
         padding:5px;
-        div{
-            a{
-                color: white;
-            }
-            button{
-                span{
-
-                }
-            }
-            div{
-                div{
-                    a{
-
-                    }
+        ul{
+            li{
+                font-size: 1.5rem;
+                text-align: end;
+                a{
+                    color:white;
                 }
             }
         }
